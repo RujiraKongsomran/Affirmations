@@ -9,33 +9,49 @@
     tools:context=".MainActivity">
 
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/love" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:gravity="center"
-        android:text="Lightning Fast Delivery"
-        android:textColor="#212121"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+    <!--    <TextView-->
+    <!--        android:id="@+id/tvData"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="40dp"-->
+    <!--        android:layout_marginEnd="40dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:textColor="#212121"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tvData"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="40dp"-->
+    <!--            android:layout_marginTop="8dp"-->
+    <!--            android:layout_marginEnd="40dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:textColor="#757575"-->
+    <!--            android:textSize="18sp"-->
+    <!--            android:textStyle="italic" />-->
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/tvData"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="40dp"
-        android:gravity="center"
-        android:text="Delivery is the process of transporting goods from a source location to a predefined destination."
-        android:textColor="#757575"
-        android:textSize="14sp"
-        android:textStyle="italic" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mregular"
+        android:lineSpacingExtra="8dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

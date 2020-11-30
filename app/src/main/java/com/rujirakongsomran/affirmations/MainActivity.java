@@ -1,10 +1,10 @@
 package com.rujirakongsomran.affirmations;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.rujirakongsomran.affirmations.Interface.JsonPlaceHolderApi;
 import com.rujirakongsomran.affirmations.Model.Data;
@@ -43,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
                 if (!response.isSuccessful()) {
                     Toast.makeText(MainActivity.this, "onResponse()", Toast.LENGTH_SHORT).show();
                 }
+
+                Data data = response.body();
+                binding.tvData.setText(data.getAffirmation());
+
             }
 
             @Override
